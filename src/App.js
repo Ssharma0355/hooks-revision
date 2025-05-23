@@ -4,6 +4,7 @@ import Counter from './components/useState/Counter';
 import App1 from './components/ContextAPI/App1';
 import App2 from './components/UseContextBig/App2';
 import Counter1 from './components/UseReducer/Counter1';
+import Calculation from './components/UseMemo/Calculation';
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
       {/* <App2 /> */}
 
       {/* useReducer example */}
-      <Counter1 />
+      {/* <Counter1 /> */}
+
+      {/* useMemo */}
+      <Calculation />
 
     </div>
   );
