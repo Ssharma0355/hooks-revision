@@ -9,13 +9,11 @@ function Calling() {
   //     setCount(count+1);
   // }
 
-
-
-//   useCallback freezes the funtional refrenece and not let child componet re-render 
+  //useCallback freezes the funtional refrenece and not let child componet re-render 
   const handleClick =useCallback(()=>{ 
       setCount(count+1);
   },[]);
-// same as useEffect if the dependecy is empty it will pasue at one rerender and if we put any of dependecy it will re-render as the valve will update
+  // same as useEffect if the dependecy is empty it will pasue at one rerender and if we put any of dependecy it will re-render as the valve will update
   return (
     <div>
       <h1>{count}</h1>
