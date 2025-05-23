@@ -6,6 +6,7 @@ import App2 from './components/UseContextBig/App2';
 import Counter1 from './components/UseReducer/Counter1';
 import Calculation from './components/UseMemo/Calculation';
 import Calling from './components/UseCallback/Calling';
+import ExpensiveCalculation from './components/UseCallbackSecondExample/ExpensiveCalculation';
 
 function App() {
   return (
@@ -29,7 +30,10 @@ function App() {
       {/* <Calculation /> */}
 
       {/* useCallback  */}
-      <Calling />
+      {/* <Calling /> */}
+
+      {/* useCallback 2nd example of expensive operation */}
+      <ExpensiveCalculation />
 
     </div>
   );
