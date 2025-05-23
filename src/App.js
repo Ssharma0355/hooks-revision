@@ -5,6 +5,7 @@ import App1 from './components/ContextAPI/App1';
 import App2 from './components/UseContextBig/App2';
 import Counter1 from './components/UseReducer/Counter1';
 import Calculation from './components/UseMemo/Calculation';
+import Calling from './components/UseCallback/Calling';
 
 function App() {
   return (
@@ -25,7 +26,10 @@ function App() {
       {/* <Counter1 /> */}
 
       {/* useMemo */}
-      <Calculation />
+      {/* <Calculation /> */}
+
+      {/* useCallback  */}
+      <Calling />
 
     </div>
   );
