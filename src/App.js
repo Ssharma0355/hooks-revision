@@ -9,6 +9,7 @@ import Calling from './components/UseCallback/Calling';
 import ExpensiveCalculation from './components/UseCallbackSecondExample/ExpensiveCalculation';
 import CounterandRef from './components/UseRef/CounterandRef';
 import StopWatch from './components/UseRef/StopWatch';
+import Entry from './components/HOC/Entry';
 
 function App() {
   return (
@@ -41,7 +42,10 @@ function App() {
       {/* <CounterandRef /> */}
 
       {/* stop watch with help of useRef  */}
-      <StopWatch />
+      {/* <StopWatch /> */}
+
+      {/* High order function example of authentication  */}
+      <Entry />
 
     </div>
   );
