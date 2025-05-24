@@ -12,6 +12,7 @@ import StopWatch from './components/UseRef/StopWatch';
 import Entry from './components/HOC/Entry';
 import Entery1 from './components/CustomHooks/Entery1';
 import LazyComp from './components/LazyLoading/LazyComp';
+import EnterClass from './components/LifecycleMethod/EnterClass';
 
 function App() {
   return (
@@ -53,7 +54,10 @@ function App() {
       {/* <Entery1 /> */}
 
       {/* lazy loading and suspense exaplme */}
-      <LazyComp />
+      {/* <LazyComp /> */}
+
+      {/* life-cycle-method in class component  */}
+      <EnterClass />
 
     </div>
   );

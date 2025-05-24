@@ -1,0 +1,57 @@
+import React, { Component } from 'react'
+import CounterUpdate from './CounterUpdate';
+
+export default class EnterClass extends Component {
+    // constructor is used to initalize the value before loading and it ios also a life cycle method
+    constructor(){
+        super();
+        this.state={
+            count:0
+        }
+    }
+    //load and render 1st time
+    componentDidMount(){
+        console.log("Component render-1st time");
+    }
+   
+    componentWillUnmount(){
+        console.log("Component unmount")
+    }
+    
+
+    Increment(){
+        this.setState({count: this.state.count +1})
+    }
+    // render is also a lifecucle method 
+  render() {
+    return (
+      <div>
+        {/* <h1>{this.state.count}</h1> */}
+        {/* if we will remove this line it will unmount  */}
+        <CounterUpdate number={this.state.count} />
+        {/* <button onClick={this.Increment.bind(this)}>Click me!</button> */}
+        <button onClick={()=>{this.Increment()}}>Click me!</button>
+      </div>
+    );
+  }
+}
+
+-----------------------------------------------------------------
+import React, { Component } from 'react'
+
+export default class CounterUpdate extends Component {
+  componentDidUpdate(prevprops,prevstate) {
+    console.log(prevprops.number);
+    console.log(this.props.number);
+if(prevprops.number !== this.props.number ){
+    console.log("Component updated")
+}
+  }
+  render() {
+    return (
+      <div>
+        <h1>{this.props.number}</h1>
+      </div>
+    );
+  }
+}
