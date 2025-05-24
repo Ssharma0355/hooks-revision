@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import BgChange from './BgChange';
 
 function CounterandRef() {
     const [count, setCount] = useState(0);
@@ -11,12 +12,12 @@ function CounterandRef() {
     }
   return (
     <div>
-        <h1>{count}</h1>
-        <button onClick={handleClick}>Click here!</button>
+      <h1>{count}</h1>
+      <button onClick={handleClick}>Click here!</button>
 
-      
+      <BgChange />
     </div>
-  )
+  );
 }
 
 export default CounterandRef
