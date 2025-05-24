@@ -8,6 +8,7 @@ import Calculation from './components/UseMemo/Calculation';
 import Calling from './components/UseCallback/Calling';
 import ExpensiveCalculation from './components/UseCallbackSecondExample/ExpensiveCalculation';
 import CounterandRef from './components/UseRef/CounterandRef';
+import StopWatch from './components/UseRef/StopWatch';
 
 function App() {
   return (
@@ -37,7 +38,10 @@ function App() {
       {/* <ExpensiveCalculation /> */}
 
       {/* useRef  */}
-      <CounterandRef />
+      {/* <CounterandRef /> */}
+
+      {/* stop watch with help of useRef  */}
+      <StopWatch />
 
     </div>
   );
