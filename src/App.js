@@ -10,6 +10,8 @@ import ExpensiveCalculation from './components/UseCallbackSecondExample/Expensiv
 import CounterandRef from './components/UseRef/CounterandRef';
 import StopWatch from './components/UseRef/StopWatch';
 import Entry from './components/HOC/Entry';
+import Entery1 from './components/CustomHooks/Entery1';
+import LazyComp from './components/LazyLoading/LazyComp';
 
 function App() {
   return (
@@ -45,7 +47,13 @@ function App() {
       {/* <StopWatch /> */}
 
       {/* High order function example of authentication  */}
-      <Entry />
+      {/* <Entry /> */}
+
+      {/* custom hooks example  */}
+      {/* <Entery1 /> */}
+
+      {/* lazy loading and suspense exaplme */}
+      <LazyComp />
 
     </div>
   );
